@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about us</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+   <header class="header">
+
+      <section class="flex">
+   
+         <a href="home.html" class="logo">NAAVIN SUVAI</a>
+   
+         <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="orders.html">REVIEWS</a>
+            <a href="contact.html">CONTACT</a>
+         </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">BARATH P</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Profile</a>
+            <a href="#" class="delete-btn">Logout</a>
+         </div>
+         <p class="account"><a href="animated_login.html">Login</a> or <a href="register.html">Register</a></p>
+      </div>
+
+   </section>
+
+
+</header>
+
+<div class="heading">
+   <h3>About us</h3>
+   <p><a href="home.html">Home </a> <span> / About</span></p>
+</div>
+
+<section class="about">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/about-img.svg" alt="">
+      </div>
+
+      <div class="content">
+         <h3>Choose your Favourite Restaraunt here!!!!</h3>
+         <p>Are you searching for hotels to taste different food varities?? Welcoming you to our website where you can get information about various hotels either veg or non veg hotels.... </p>
+         <a href="menu.html" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<section class="steps">
+
+   <h1 class="title">3 simple steps</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/step-1.png" alt="">
+         <h3>LOGIN WITH YOUR ACCOUNT AND BECOME OUR FAMILY</h3>
+         <p></p>
+      </div>
+
+      <div class="box">
+         <img src="images/step-2.png" alt="">
+         <h3>SEARCH YOUR FAVOURITE RESTARAUNTS</h3>
+         <p></p>
+      </div>
+
+      <div class="box">
+         <img src="images/step-3.png" alt="">
+         <h3>GIVE YOUR RATING AND VIEWS FOR YOUR RESTARAUNT</h3>
+         <p></p>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>CONTACT US THROUGH EMAIL</h3>
+         <a href="mailto:shaikhanas@gmail.com">FOUNDER : barathp@gmail.com</a>
+      </div>
+
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>OUR ADDRESS</h3>
+         <a href="https://www.google.com/maps">Dno:39, Roja Street, Komarapalayam, Sathyamangalam, Erode District.</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>CONTACT US THROUGH CALL</h3>
+         <a href="tel:9274562890">Mr. Barath P : 9274562890</a>
+      </div>
+
+   </section>
+
+ 
+
+</footer>
+
+
+
+
+
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".reviews-slider", {
+   loop:true,
+   grabCursor:true,
+            spaceBetween: 20,
+   pagination: {
+      el: ".swiper-pagination",
+   },
+   breakpoints: {
+      550: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+   },
+});
+
+</script>
+
+</body>
+</html>

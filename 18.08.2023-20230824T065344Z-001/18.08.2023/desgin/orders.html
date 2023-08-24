@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>my orders</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="C:\Users\ACER NITRO 5\Downloads\desgin\new\style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+   
+   <header class="header">
+
+      <section class="flex">
+   
+         <a href="home.html" class="logo">NAAVIN SUVAI</a>
+   
+         <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT </a>
+            <a href="menu.html">MENU </a>
+            <a href="orders.html">REVIEWS</a>
+            <a href="contact.html">CONTACT </a>
+         </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">BARATH P</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Profile</a>
+            <a href="#" class="delete-btn">Logout</a>
+         </div>
+         <p class="account"><a href="animated_login.html">Login</a> or <a href="register.html">Register</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="reviews">
+
+   <h1 class="title">customer's reviews</h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <img src="images/pic-1.png" alt="">
+            <p>Super</p>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+            </div>
+            <h3>BARATH_P</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic-3.png" alt="">
+            <p>Very wonderful</p>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               
+            </div>
+            <h3>SUGHITH_V</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic-2.png" alt="">
+            <p>Somewhat Fine</p>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>RAJA ROHINI_M</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic-5.png" alt="">
+            <p>Good</p>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+        
+            </div>
+            <h3>MANOJKUMAR_A</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic-6.png" alt="">
+            <p>Excellent</p>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+
+            </div>
+            <h3>NIVETHA_K</h3>
+         </div>
+
+         <div class="swiper-slide slide">
+            <img src="images/pic-4.png" alt="">
+            <p>Very Worst</p>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>HANSANANDINI_R_U</h3>
+         </div>
+         </div>
+
+         <h1 class="title">Give your review here </h1>
+      </div>
+      <div class="container", allign="center">
+         <div class="post">
+           <div class="text">Thanks for rating us!</div>
+           <div class="edit">EDIT</div>
+         </div>
+         <div class="star-widget">
+           <input type="radio" name="rate" id="rate-5">
+           <label for="rate-5" class="fas fa-star"></label>
+   
+           <input type="radio" name="rate" id="rate-4">
+           <label for="rate-4" class="fas fa-star"></label>
+   
+           <input type="radio" name="rate" id="rate-3">
+           <label for="rate-3" class="fas fa-star"></label>
+   
+           <input type="radio" name="rate" id="rate-2">
+           <label for="rate-2" class="fas fa-star"></label>
+   
+           <input type="radio" name="rate" id="rate-1">
+           <label for="rate-1" class="fas fa-star"></label>
+           <form action="#">
+             <header></header>
+             <div class="textarea">
+               <textarea cols="30" placeholder="Describe your experience.."></textarea>
+             </div>
+             <div class="btn">
+               <button type="submit">Post</button>
+             </div>
+           </form>
+         </div>
+       </div>
+       <script>
+         const btn = document.querySelector("button");
+         const post = document.querySelector(".post");
+         const widget = document.querySelector(".star-widget");
+         const editBtn = document.querySelector(".edit");
+         btn.onclick = ()=>{
+           widget.style.display = "none";
+           post.style.display = "block";
+           editBtn.onclick = ()=>{
+             widget.style.display = "block";
+             post.style.display = "none";
+           }
+           return false;
+         }
+       </script>
+   
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>CONTACT US THROUGH EMAIL</h3>
+         <a href="mailto:shaikhanas@gmail.com">FOUNDER : barathp@gmail.com</a>
+      </div>
+
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>OUR ADDRESS</h3>
+         <a href="https://www.google.com/maps">Dno:39, Roja Street, Komarapalayam, Sathyamangalam, Erode District.</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>CONTACT US THROUGH CALL</h3>
+         <a href="tel:9274562890">Mr. Barath P : 9274562890</a>
+      </div>
+
+   </section>
+
+ 
+
+</footer>
+
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
