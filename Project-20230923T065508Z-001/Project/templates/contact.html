@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="static/dashboard/style.css">
+    <title>Bithack</title>
+    <style>
+
+        .contact-input{
+            background-color: var(--color-white);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        margin-top: 1rem;
+        box-shadow: var(--box-shadow);
+        cursor: pointer;
+        transition: all 0.3s ease;
+         }
+         
+        .contact-input:hover{
+            box-shadow: none;
+        }
+        .contact-input .top-input{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+
+        }
+        .contact-input .bottom-input{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .contact-input input{
+            border: 2px solid  var(--border);
+            width: 90%;
+            padding: 15px;
+            margin-top: 25px;
+            border-radius: 10px;
+             font-family: 'Poppins', sans-serif;
+             font-size: 1rem;
+             color: var(--color-dark);
+             letter-spacing: 0.5px;
+             background-color: var(--color-white);
+        }
+        .new-users{
+            padding: 10px;
+         }
+         .new-users .user-queries{
+             display: flex;
+             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+             box-shadow: var(--box-shadow);
+            transition: all 0.3s ease;
+            background-color: var(--color-white);
+            border-radius: var(--card-border-radius);
+            padding: 20px 5px 20px 5px;
+            margin-top: 10px;
+         }
+        .new-users .user-queries textarea{
+            width: 95%;
+            resize: none;
+            border: 2px solid var(--border);
+             padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: var(--color-dark);
+            letter-spacing: 0.7px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background-color: var(--color-white);
+        }
+        .new-users .user-queries:hover{
+            box-shadow: none;
+        }
+        .first{
+            position: relative;
+         }
+         .last{
+            position: relative;
+         }
+         .email{
+            position: relative;
+         }
+         .mobile{
+            position: relative;
+         }
+        .first span,.last span,.email span,.mobile span{
+            position: absolute;
+            top: 50%;
+            right: 15%;
+        }
+        .queries-btn{
+             width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            padding-right: 30px;
+            margin-top: 10px;
+            margin-bottom: -10px;
+        }
+        .queries-btn button{
+            padding: 10px 35px 10px 35px;
+            border-radius: 5px;
+            background-color: #1B9C85;
+            color: #fff;
+            font-weight:500 ;
+            letter-spacing: 0.7px;
+            font-size: 1rem;
+        }
+        .new-users .support-box{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: var(--color-white);
+            border-radius: 15px;
+            margin-top: 10px;
+
+        }
+         
+        .content-box{
+            border-right: 3px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .content-box span{
+            transform: scale(1.5);
+            color:var( --color-danger);
+        }
+        .content-box h2,h3{
+            color: var( --color-dark);
+            opacity: 0.7;
+        }
+        .content-box:nth-child(3){
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="/static/images/logo.png">
+                    <h2>Senti<span class="danger">Tool</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <a href="about">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>About</h3>
+                </a>
+                <a href="sentiment">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Sentiment Analyzer</h3>
+                </a>
+                <a href="review">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Web scraping</h3>
+                </a>
+                <!--<a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Sarcastic Reviews</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Reviews List</h3>
+                </a>-->
+                <a href="contact" class="active">
+                    <span class="material-icons-sharp">
+                        phone
+                    </span>
+                    <h3>Contact Us</h3>
+                </a>
+                <a>
+                    
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Contact</h1>
+            <!-- Analyses -->
+            <div class="contact-input">
+                 <div class="top-input">
+                    <div class="first"> 
+                        <span class="material-icons-sharp">
+                        drive_file_rename_outline
+                        </span>
+                         <input type="text" name="" id="" placeholder="Firstname">
+                    </div>
+                    <div class="last">
+                        <span class="material-icons-sharp">
+                            drive_file_rename_outline
+                            </span>
+                            <input type="text" name="" id="" placeholder="Lastname">
+                    </div>
+                 </div>
+                 <div class="bottom-input">
+                    <div class="email">
+                        <span class="material-icons-sharp">
+                            mark_email_unread
+                            </span>
+                        <input type="email" name="" id="" placeholder="Email Address">
+                    </div>
+                   <div class="mobile">
+                    <span class="material-icons-sharp">
+                        call
+                        </span>
+                        <input type="number" name="" id="" placeholder="Mobile Number">
+                   </div>
+                    
+                 </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            <div class="new-users">
+                <h2>Queries</h2>
+                <div class="user-queries">
+                    <textarea name="" id="" cols="10" rows="5" placeholder="Enter Your Queries......."></textarea>
+                   <div class="queries-btn">
+                    <button style="background-color: rgba(171, 34, 107, 0.925);">Submit</button> 
+
+                    
+                   </div>
+                </div>
+            </div>
+
+            <div class="new-users">
+                <h2>Support</h2>
+                <div class="support-box">
+                    <div class="content-box">
+                        <span class="material-icons-sharp">
+                            contact_mail
+                            </span>
+                        <h2>Gmail</h2>
+                        <h3>abc@bitsathy.ac.in</h3>
+                    </div>
+                    <div class="content-box">
+                        <span class="material-icons-sharp">
+                            phone_callback
+                            </span>
+                        <h2>P.NO</h2>
+                        <h3>+918982329108</h3>
+                        <h3>5.00am-9.00pm PST,Monday-Friday</h3>
+                    </div>
+                    <div class="content-box">
+                        <span class="material-icons-sharp">
+                            chat
+                            </span>
+                        <h2>Live Chat</h2>
+                        <h3>5.00am-9.00pm PST,Monday-Friday</h3>
+                    </div>
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+             
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active"> 
+
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Mr.Barath P</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/static/images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7819.604523020722!2d77.27679789999999!3d11.494184100000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1695285010322!5m2!1sen!2sin" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Address</h2>
+                    <span class="material-icons-sharp">
+                        map
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            where_to_vote
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3> BANNARI AMMAN <br> INSTITUTE OF TECHNOLOGY,<br>
+                                 SATHY-BHAVANI STATE,<br>HIGHWAY
+                                 TAMIL NADU-638401<br>
+                            </h3>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                </div>
+
+                 
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    
+    <script src="/static/dashboard/order.js"></script>
+    <script src="/static/dashboard/index.js"></script>
+</body>
+
+</html>

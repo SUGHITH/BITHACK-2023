@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="static/dashboard/style.css">
+    <title>Bithack</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="/static/images/logo.png">
+                    <h2>Senti<span class="danger">Tool</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="/" class="active" >
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <a href="about">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>About</h3>
+                </a>
+                <a href="sentiment">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Sentiment Analyzer</h3>
+                </a>
+                <a href="review" >
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Web scraping</h3>
+                </a>
+                <!--<a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Sarcastic Reviews</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Reviews List</h3>
+                </a>-->
+                <a href="contact">
+                    <span class="material-icons-sharp">
+                        phone
+                    </span>
+                    <h3>Contact Us</h3>
+                </a>
+                <a>
+                    
+                   
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Analytics</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Positive Reviews</h3>
+                            <h1 style="margin-left: 15px">750</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>>=0.5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Negative Reviews</h3>
+                            <h1 style="margin-left: 15px">256</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p><=0.5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Neutral Reviews</h3>
+                            <h1 style="margin-left: 15px">500</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-0.4 - 0.4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- New Users Section -->
+            <div class="new-users">
+                <h2>Hotel Reviews</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <h2>Review</h2>
+                        <p style="font-size: 15px">The quality of food was good<br>but the server was very rude.</p>
+                        <p style="font-size: 15px">The space for parking was very congested.</p>
+                        <p style="font-size: 15px">The Ambience was very neat and clean</p>
+                    </div>
+                    <div class="user">
+                        <h2>Positive Aspects</h2>
+                        <p style="font-size: 15px">quality of food is good</p>
+                        <p style="font-size: 15px">Ambience is neat and clean</p>
+                    </div>
+                    <div class="user">
+                        <h2>Negative Aspects</h2>
+                        <p style="font-size: 15px">Server rude</p>
+                        <p style="font-size: 15px">Parking space congested</p>
+                    </div>
+                    <div class="user">
+                        <h2>Overall sentiment</h2>
+                        <p style="font-size: 15px;color:red">Negative</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            <div class="new-users">
+                <h2>Movie Reviews</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <h2>Review</h2>
+                        <p style="font-size: 15px">The movie was great but the climax was disappointing.</p>
+                        <p style="font-size: 15px">The BGM was awesome</p>
+                        <p style="font-size: 15px">The Ambience was very neat and clean</p>
+                    </div>
+                    <div class="user">
+                        <h2>Positive Aspects</h2>
+                        <p style="font-size: 15px">Movie great</p>
+                        <p style="font-size: 15px">BGM awesome</p>
+                        <p style="font-size: 15px">Ambience clean</p>
+                    </div>
+                    <div class="user">
+                        <h2>Negative Aspects</h2>
+                        <p style="font-size: 15px">Climax disappointing</p>
+                    </div>
+                    <div class="user">
+                        <h2>Overall sentiment</h2>
+                        <p style="font-size: 15px;color:green">Positive</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="new-users">
+                <h2>Product Reviews</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <h2>Review</h2>
+                        <p style="font-size: 15px">RealMe 5G has fantastic design and look</p>
+                        <p style="font-size: 15px">Should have been amoled screen and No dual speakers </p>
+                        <p style="font-size: 15px">striking charging speed with 5G connectivity an Costly</p>
+                    </div>
+                    <div class="user">
+                        <h2>Positive Aspects</h2>
+                        <p style="font-size: 15px">Fantastic design</p>
+                        <p style="font-size: 15px">Charger speed</p>
+                        <p style="font-size: 15px">5G connectivity</p>
+                    </div>
+                    <div class="user">
+                        <h2>Negative Aspects</h2>
+                        <p style="font-size: 15px">No dual speakers</p>
+                        <p style="font-size: 15px">Costly</p>
+                    </div>
+                    <div class="user">
+                        <h2>Overall sentiment</h2>
+                        <p style="font-size: 15px;color:blue">Neutral</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Mr.Barath P</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="/static/images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="/static/images/logo.png">
+                    <h2>SentiTool</h2>
+                    <p>Aspect Based Sentiment Analysis</p>
+                </div>
+            </div>
+
+            <!--<div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>-->
+
+                <!--<div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>-->
+
+        </div>
+
+
+    </div>
+
+    <script src="/static/dashboard/order.js"></script>
+    <script src="/static/dashboard/index.js"></script>
+</body>
+
+</html>
